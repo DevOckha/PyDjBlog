@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}About{% endblock title %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'dblog/css/style.css' %}"> <!-- block css sayfaya özel css eklememiz için kullanılır -->
+{% endblock css %}
+
+{% block content %}
+<div class="about-section" style="text-align: center;">
+    <h1>About Me</h1>
+    <p>Hi, I'm Yakup, I'm 21 years old. I've been learning web development with django for over 2 months. I will share what I have learned on this blog page that I have coded myself.</p>
+    <a href="https://github.com/DevOckha"  title="Github">Github</a>  |  <a href="https://twitter.com/AkaYakop"  title="Twitter">Twitter</a>
+
+
+  </div>
+  
+{% endblock content %}
+
+{% block js %}{% endblock js %}<!-- block js sayfaya özel js eklememiz için kullanılır -->

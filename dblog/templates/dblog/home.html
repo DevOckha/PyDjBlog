@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+
+
+
+{% block content %}
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-3">
+                {% include 'partials/_categories.html' %}
+            </div>
+            <div class="col-9">
+                {% include 'dblog/partials/_blog.html' %} 
+            </div>
+        </div>
+    </div>
+{% endblock content %}
+
+{% block js %}{% endblock js %}
